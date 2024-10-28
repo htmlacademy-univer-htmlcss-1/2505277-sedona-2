@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+
   </head>
   <body>
 
-   <header class="page-header">
+   <header data-test="header" class="page-header">
     <a href="#" class="logo-header">
-      <img src="#" alt="Логотип" >
+      <img src="images/logo-sedona.png" alt="Логотип" width="138" height="64">
     </a>
     <nav class="navigation">
       <ul class="navigation-list">
@@ -42,17 +43,17 @@
     </nav>
   </header>
 
-  <main class="main-index">
-    <section class="welcome">
+  <main data-test="main"  class="main-index">
+    <section data-test="hero" class="welcome">
 
 
         <h1 class="visually-hidden">Путешествия в Седону</h1>
 
-        <img src="#" alt="Добро пожаловать" >
+        <img src="images/welcome-title.svg" alt="Добро пожаловать" class="welcome-title" width="458" height="352">
 
-        <img src="#" alt="Фон секции" >
+
 </section>
-<section class="advantages">
+<section data-test="advantages" class="advantages">
   <header class="advantages-header">
     <h2 class="advantages-title">Седона — небольшой городок в Аризоне,
       заслуживающий большего!</h2>
@@ -64,7 +65,7 @@
         <li class="advantages-item">
           <h3 class="advantages-item__title">Настоящий городок</h3>
           <p class="advantages-item__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="#" alt="Фото города Седона" >
+          <img src="images/photo-1.jpg" alt="Фото города Седона" width="800" height="385">
         </li>
         <li class="advantages-item__card">
           <h3 class="advantages-item__title">Небольшая
@@ -87,7 +88,7 @@
 
         </li>
         <li class="advantages-item">
-          <img src="#" alt="Фото каньона " >
+          <img src="images/photo-2.jpg" alt="Фото каньона " width="800" height="385">
           <h3 class="advantages-item__title">Там есть
             мост дьявола</h3>
           <p class="advantages-item__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -102,32 +103,30 @@
       </header>
       <ul class="feature-list">
         <li class="feature-item">
-          <img src="#" alt="Дом" >
+
           <h3 class="feature-item__title">Жилье</h3>
           <p class="feature-item__description">Рекомендуем пожить в настоящем мотеле,
             всё как в кино!</p>
         </li>
         <li class="feature-item">
-          <img src="#" alt="Бургер">
           <h3 class="feature-item__title">Еда</h3>
           <p class="feature-item__description">Всегда заказывайте
             топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li class="feature-item">
-          <img src="#" alt="Подарочная коробка">
           <h3 class="feature-item__title">Сувениры</h3>
           <p class="feature-item__description">Не только китайского,
             но и настоящего местного производства!</p>
         </li>
       </ul>
     </section>
-    <section class="hotels">
+    <section data-test="search" class="hotels">
       <h3 class="hotels-title">Заинтересовались?</h3>
       <p class="hotels-title">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="button hotels-button">ПОИСК ГОСТИНИЦЫ В CЕДОНЕ</button>
     </section>
-    <section class="subscribe">
-      <img src="#" alt="Фон секции подписка">
+    <section data-test="subscribe" class="subscribe">
+
       <h3 class="hotels-title">Подпишитесь на рассылку</h3>
       <p class="hotels-title">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -148,14 +147,15 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <a href="https://vk.com/htmlacademy" class="social-link">
 
-            <img src="#" alt="Вконтакте">
+            <img src="images/vkontakte.svg" alt="Вконтакте" width="24" height="14">
         </a>
         <a href="https://t.me/htmlacademy " class="social-link">
 
-            <img src="#" alt="Телеграм">
+
+            <img src="images/tg.svg" alt="Телеграм" width="18" height="16">
         </a>
         <a href="https://www.youtube.com/user/htmlacademyru" class="social-link">
-            <img src="#" alt="Ютуб">
+            <img src="images/youtube.svg" alt="Ютуб" width="22" height="17">
 
         </a>
     </section>
@@ -174,7 +174,7 @@
         <h2 class="visually-hidden">Копирайт</h2>
         <a href="https://htmlacademy.ru/" class="copyright-link">
 
-            <img src="#" alt="Логотп HTML Academy">
+            <img src="images/logo-academy.svg" alt="Логотп HTML Academy">
         </a>
     </section>
   </footer>
