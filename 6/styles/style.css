@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+
+  background: #f2f2f2;
+}
+.page-header {
+  color: black;
+  background-color: #fff;
+}
+.navigation-list {
+  list-style: none;
+}
+.navigation-link {
+  color: #000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.button {
+  color: #fff;
+  background-color: #756157;
+  border: 0;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.welcome {
+  background-color: #fff;
+  background: url(../images/welcome-background.jpg) no-repeat;
+  background-size: 100% auto;
+}
+.header {
+  text-align: center;
+}
+.title {
+  color: #000;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.description {
+  color: #333;
+  font-size: 22px;
+  line-height: 26px;
+}
+.advantages-item {
+  list-style: none;
+}
+.advantages-item__content {
+  background-color: #82b3d3;
+}
+.advantages-item__content .advantages-item__title,
+.advantages-item__content .advantages-item__description {
+  color: white;
+  text-align: center;
+}
+.advantages-item__card {
+  background-color: rgba(131, 179, 211, 0.12);
+  text-align: center;
+  list-style: none;
+}
+.advantages-item__title {
+  color: #000;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.advantages-item__description {
+  color: #333;
+  font-size: 18px;
+  line-height: 21px;
+}
+.feature-item,
+.feature-item__content {
+  background-color: rgba(131, 179, 211, 0.12);
+  text-align: center;
+  list-style: none;
+}
+
+.feature-item__title {
+  color: #000;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.feature-item__description {
+  color: #333;
+  font-size: 18px;
+  line-height: 21px;
+}
+.second,
+.first,
+.third {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.subscribe {
+  background-color: #fff;
+  background: url(../images/welcome-background.jpg) no-repeat;
+  background-size: 100% auto;
+}
+.subscribe h3,
+.subscribe p {
+  color: #fff;
+}
+.subscribe-button {
+  color: white;
+
+  background-color: #82b3d3;
+  border: 0;
+}
+.page-footer {
+  background-color: #fff;
+}
+address {
+  font-style: normal;
+}
+.contacts-phone {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
