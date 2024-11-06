@@ -16,19 +16,23 @@ html {
   height: 100%;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
+
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   min-height: 100%;
   width: 1200px;
+
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #f2f2f2;
+
   color: #000;
+  background-color: #f2f2f2;
 }
 li,
 ul {
@@ -40,9 +44,11 @@ p {
   margin: 0;
   padding: 0;
 }
-main .visually-hidden {
+main .visually-hidden,
+footer .visually-hidden {
   display: none;
 }
+
 .main-container {
   flex-grow: 1;
 }
@@ -53,7 +59,6 @@ main .visually-hidden {
 .logo-header {
   width: 138px;
   margin-right: 30px;
-  margin-left: 70px;
 }
 
 .navigation {
@@ -62,7 +67,7 @@ main .visually-hidden {
 .navigation-list {
   margin-right: 285px;
 
-  width: 607px;
+  width: 540px;
 }
 .navigation-user {
   margin-right: 0;
@@ -90,6 +95,7 @@ main .visually-hidden {
   line-height: 20px;
 
   border-radius: 4px;
+  height: 36px;
 }
 .main-index {
   color: #000;
@@ -97,6 +103,8 @@ main .visually-hidden {
 }
 .welcome {
   display: flex;
+  flex-direction: column;
+
   background-color: #fff;
   background: url(../images/welcome-background.jpg) no-repeat;
   height: 485px;
@@ -210,10 +218,11 @@ main .visually-hidden {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 415px;
+
   color: #000;
   background: url(../images/subscribe-background.jpg) no-repeat;
   background-size: 100% auto;
+  height: 415px;
 }
 
 .subscribe-email {
@@ -234,7 +243,12 @@ main .visually-hidden {
   display: flex;
   justify-content: space-around;
 }
+.footer-container {
+  justify-content: space-between;
 
+  align-items: center;
+  height: 50px;
+}
 address {
   font-style: normal;
 }
@@ -255,6 +269,9 @@ address {
   display: flex;
   width: 1060px;
   margin: 0 70px;
+}
+.wrapper {
+  padding: 0 70px;
 }
 .catalog-hotels__filter {
   display: flex;
@@ -313,7 +330,6 @@ address {
 
 .catalog-filter {
   color: #fff;
-  background: #000;
 }
 .catalog-filter-title {
   font-size: 20px;
@@ -339,7 +355,6 @@ address {
 .button-apply,
 .button-to-favorites {
   background: #82b3d3;
-  height: 36px;
 }
 .button-reset {
   background: transparent;
