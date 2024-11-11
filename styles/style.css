@@ -71,6 +71,9 @@ input[type="checkbox"] {
 .main-container {
   flex-grow: 1;
 }
+header {
+  z-index: 1;
+}
 .page-header {
   color: black;
   background-color: #fff;
@@ -97,6 +100,9 @@ input[type="checkbox"] {
   width: 720px;
   margin: 0 41px;
   text-align: center;
+}
+a.logo-header {
+  height: 64px;
 }
 .logo-header {
   width: 140px;
@@ -663,31 +669,36 @@ address {
 }
 .pagination-item {
   margin-right: 8px;
+  width: 60px;
+  height: 60px;
+
+  border-radius: 4px;
+
+  background-color: #82b3d3;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
 }
 .pagination-link {
   color: #ffffff;
-  background-color: #82b3d3;
   text-decoration: none;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-
-  border-radius: 4px;
-  padding: 12px 24px;
 }
 
-.pagination-current {
+.pagination-item:first-child {
   color: #000;
   background-color: #f2f2f2;
 }
-
+.pagination-current,
 .pagination-next {
   color: #000;
-  padding: 17px 21px;
-
+}
+.pagination-item:nth-last-child(2) {
   background-color: transparent;
 }
-.pagination-end {
-  padding: 12px 18px;
+.pagination-item:last-child {
   margin-right: 0;
 }
