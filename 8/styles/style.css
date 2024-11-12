@@ -392,7 +392,6 @@ a.logo-header {
   justify-content: space-between;
 
   align-items: center;
-  height: 50px;
 }
 /* .vk {
   padding: 13px 12px;
@@ -669,21 +668,23 @@ address {
 }
 .pagination-item {
   margin-right: 8px;
-  width: 60px;
-  height: 60px;
 
   border-radius: 4px;
 
   background-color: #82b3d3;
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
 }
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+
+  padding-top: 12px;
+
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
+  text-align: center;
   line-height: 36px;
   font-weight: 700;
 }
