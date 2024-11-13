@@ -468,7 +468,7 @@ address {
 }
 .card-item {
   display: grid;
-  grid-template-rows: 212px min-content auto auto auto;
+  grid-template-rows: 1fr min-content auto auto auto;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     " image image"
