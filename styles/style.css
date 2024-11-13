@@ -35,7 +35,8 @@ body {
   background-color: #f2f2f2;
 }
 h1,
-h2 {
+h2,
+h3 {
   margin: 0;
 }
 li,
@@ -43,6 +44,10 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
 }
 p {
   margin: 0;
@@ -149,7 +154,6 @@ a.logo-header {
 }
 
 .button {
-  display: inline;
   align-items: center;
   padding: 8px 34px;
 
@@ -157,15 +161,14 @@ a.logo-header {
   background-color: #756157;
 
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   text-align: center;
 
   border: 0;
   border-radius: 4px;
-  height: 36px;
 }
 .main-index {
   color: #000;
@@ -459,56 +462,61 @@ address {
   padding: 35px 0 8px;
 }
 .card-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
 }
 .card-item {
-  display: flex;
-  width: 338px;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr min-content auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    " image image"
+    "title title"
+    "type price"
+    "more favorites"
+    "stars rating";
+
   border: 1px solid #e6e6e6;
   border-radius: 4px;
-}
 
-.card-item button {
-  display: inline;
+  padding: 20px;
+  gap: 20px;
 }
-.card-container {
-  padding: 19px;
+.card-image-link {
+  grid-area: image;
 }
-.card-item img {
-  padding-bottom: 16px;
+.card-title-link {
+  list-style: none;
+  grid-area: title;
 }
-.card-item:nth-child(2) {
-  margin: 0 20px;
+.card-item-type {
+  grid-area: type;
 }
-.card-item:nth-child(4) {
-  margin-top: 20px;
+.card-item-price {
+  grid-area: price;
+  text-align: right;
 }
-.type-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 16px 0;
+.card-button-more {
+  grid-area: more;
 }
-.button-card__container {
-  display: flex;
+.button-to-favorites {
+  grid-area: favorites;
 }
-.rating-container {
-  display: flex;
-  justify-content: space-between;
-
-  padding-top: 16px;
-}
-.hotels-star img {
+.rating {
+  grid-area: stars;
   padding-top: 10px;
 }
-.button-card__container button,
+.button-rating {
+  grid-area: rating;
+}
+/* .button-card__container button,
 .rating-container button {
   width: 140px;
 }
+*/
 .button-more {
   padding: 8px 26px;
-  margin-right: 20px;
 }
 .inner-header__title {
   color: #fff;
@@ -583,7 +591,7 @@ address {
   background: #82b3d3;
 }
 .button-to-favorites {
-  padding: 8px 20px;
+  padding: 8px 16px;
 }
 .button-apply {
   margin-bottom: 32px;
@@ -624,7 +632,7 @@ address {
   font-size: 18px;
   line-height: 21px;
   height: inherit;
-  height: 49px;
+
   text-indent: 20px;
   margin-right: 70px;
   width: 292px;
@@ -649,17 +657,17 @@ address {
 }
 
 .button-in-favorites {
+  width: 140px;
+  padding: 8px 16px;
   background: #7db54f;
 }
 .button-rating {
   color: #333;
   background: #f2f2f2;
-  display: inline;
-  font-size: 16px;
-  line-height: 20px;
+
   text-transform: uppercase;
   font-weight: normal;
-  padding: 8px 22px;
+  padding: 8px 20px;
 }
 .pagination {
   display: flex;
