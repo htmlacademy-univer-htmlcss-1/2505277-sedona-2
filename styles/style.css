@@ -120,7 +120,6 @@ a.logo-header {
 .navigation {
   display: flex;
 }
-
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -469,66 +468,47 @@ address {
 }
 .card-item {
   display: grid;
-  grid-template-rows: 20px 212px min-content auto auto auto 20px;
-  grid-template-columns: 20px 150px 150px 20px;
+  grid-template-rows: 212px min-content auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    " image image"
+    "title title"
+    "type price"
+    "more favorites"
+    "stars rating";
+
   border: 1px solid #e6e6e6;
   border-radius: 4px;
+
+  padding: 20px;
+  gap: 20px;
 }
 .card-image-link {
-  grid-column: 2 / 4;
-  grid-row-start: 2;
+  grid-area: image;
 }
 .card-title-link {
   list-style: none;
+  grid-area: title;
 }
-.card-title-link,
-.card-price,
-.card-button,
-.card-rating {
-  grid-column: 2 / 4;
+.card-item-type {
+  grid-area: type;
 }
-
-.card-title-link {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  grid-row: 3/4;
-}
-.card-hotels-type,
-.card-price {
-  grid-row: 4/5;
-}
-.card-hotels-type {
-  grid-column: 2/3;
-}
-.card-price {
-  grid-column: 3/4;
+.card-item-price {
+  grid-area: price;
   text-align: right;
-}
-.card-button-more,
-.card-button-to-favorites {
-  grid-row: 5/6;
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
 .card-button-more {
-  grid-column: 2/3;
+  grid-area: more;
 }
-.card-button-to-favorites {
-  margin-left: 10px;
-  width: 140px;
-
-  grid-column: 3/4;
+.button-to-favorites {
+  grid-area: favorites;
 }
-.card-rating {
+.rating {
+  grid-area: stars;
   padding-top: 10px;
-  grid-row: 6/7;
-  grid-column: 2/4;
 }
-.card-button-rating {
-  /* width: 140px; */
-  text-align: right;
-  grid-row: 6/7;
-  grid-column: 3/4;
+.button-rating {
+  grid-area: rating;
 }
 /* .button-card__container button,
 .rating-container button {
@@ -536,7 +516,6 @@ address {
 }
 */
 .button-more {
-  width: 140px;
   padding: 8px 26px;
 }
 .inner-header__title {
@@ -612,8 +591,7 @@ address {
   background: #82b3d3;
 }
 .button-to-favorites {
-  width: 140px;
-  padding: 8px 20px;
+  padding: 8px 16px;
 }
 .button-apply {
   margin-bottom: 32px;
@@ -689,7 +667,7 @@ address {
 
   text-transform: uppercase;
   font-weight: normal;
-  padding: 8px 22px;
+  padding: 8px 20px;
 }
 .pagination {
   display: flex;
