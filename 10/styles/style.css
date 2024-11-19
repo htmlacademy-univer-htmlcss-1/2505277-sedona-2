@@ -210,6 +210,19 @@ a.logo-header {
   display: block;
   border: 2px solid #756257;
 }
+.active {
+  position: relative;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: -2px;
+
+  display: block;
+  border: 2px solid #756257;
+}
 .page {
   position: relative;
 }
@@ -409,17 +422,7 @@ a.logo-header {
 
   background: rgba(255, 255, 255, 0.3);
 }
-.advantages-item:last-child::after {
-  content: "";
-  position: absolute;
-  left: 170px;
-  right: 170px;
-  bottom: 30px;
 
-  height: 2px;
-
-  background: rgba(255, 255, 255, 0.3);
-}
 .advantages-item__content {
   height: 385px;
   width: 400px;
