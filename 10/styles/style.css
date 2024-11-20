@@ -768,25 +768,17 @@ a.card-image-link {
 }
 .rating {
   grid-area: stars;
+  display: flex;
+  padding-top: 10px;
 }
-
-.card-item:first-child .rating,
-.card-item:nth-child(2) .rating {
-  background: url(../images/catalog/star.svg), url(../images/catalog/star.svg),
-    url(../images/catalog/star.svg), url(../images/catalog/star.svg);
-  background-repeat: no-repeat;
-  background-position: 0 10px, 23px 10px, 47px 10px, 71px 10px;
+.rating-img {
+  width: 18px;
+  height: 17px;
+  margin-right: 6px;
+  background: url(../images/catalog/star.svg);
 }
-.card-item:nth-child(3) .rating {
-  background: url(../images/catalog/star.svg), url(../images/catalog/star.svg),
-    url(../images/catalog/star.svg);
-  background-repeat: no-repeat;
-  background-position: 0 10px, 23px 10px, 47px 10px;
-}
-.card-item:last-child .rating {
-  background: url(../images/catalog/star.svg), url(../images/catalog/star.svg);
-  background-repeat: no-repeat;
-  background-position: 0 10px, 23px 10px;
+.rating-img:last-child {
+  margin-right: 0;
 }
 .button-rating {
   grid-area: rating;
