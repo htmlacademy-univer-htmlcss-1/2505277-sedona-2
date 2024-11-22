@@ -368,5 +368,109 @@
         </section>
       </div>
     </footer>
+
+    <div id="#modal" class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">&#x2715
+          <span class="visually-hidden">X</span>
+        </button>
+        <div class="circle"></div>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form
+            class="seacrh-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <div class="field-group">
+              <label class="search-label search-in" for="search-in">Дата Заезда:</label>
+
+<div class="search-form-date-in">
+<input
+class="search-form-field field date"
+type="text"
+id="search-in"
+name="search-in"
+placeholder="27 апреля 2020" onfocus="this.type='date'" onblur="if(this.value==''){
+  this.type='text'}"
+/>
+
+</div>
+
+
+
+</div>
+            <div class="field-group">
+              <label class="search-label search-out" for="search-out"
+                >Дата Выезда:</label
+              >
+              <div class=" search-form-date-out ">
+
+                <input
+                  class="seacrh-form-field field"
+                  type="text"
+                  id="search-out"
+                  name="search-out"
+                  placeholder="1 сентября 2023" onfocus="this.type='date'" onblur="if(this.value==''){
+                    this.type='text'}"
+                />
+              </div>
+
+            </div>
+            <div class="field-group  field-quantity-group">
+
+
+                <label class="search-label adult " for="input-box"
+                  >Взрослые:</label
+                >
+
+
+             <div class="quantity">
+              <button class="minus" aria-label="Decrease">&minus;</button>
+              <input
+                type="number"
+                class="input-box"
+                value="2"
+                min="1"
+                max="10"
+              />
+              <button class="plus" aria-label="Increase">&plus;</button>
+            </div>
+
+         <label class="search-label child" for="search-out"
+              >Дети:</label
+            >
+            <div class="quantity ">
+              <button class="minus" aria-label="Decrease">&minus;</button>
+              <input
+                type="number"
+                class="input-box"
+                value="2"
+                min="1"
+                max="10"
+              />
+              <button class="plus" aria-label="Increase">&plus;</button>
+            </div>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button">
+                <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#a)">
+                   <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                  </g>
+                </svg>
+              </button>
+              <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст
+               которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </span>
+          </div>
+
+            <button class="button search-form-button" type="submit">
+              найти
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
