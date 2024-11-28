@@ -506,6 +506,7 @@ a.logo-header {
   background: #f2f2f2;
   border-radius: 4px 0 0 4px;
 }
+
 .field::placeholder {
   font-family: "PT sans";
 }
@@ -670,7 +671,7 @@ address {
   padding: 0;
 }
 .catalog-filter-group:nth-child(2) {
-  margin-right: 130px;
+  margin-right: 150px;
 }
 .select-menu {
   display: flex;
@@ -778,8 +779,11 @@ a.card-image-link {
   font-size: 16px;
   line-height: 21x;
   padding-bottom: 40px;
+  display: flex;
 }
-
+.breadcrumbs-item:nth-child(2) {
+  margin: 0 10px;
+}
 /* Link */
 .breadcrumbs-link {
   color: inherit;
@@ -801,7 +805,7 @@ a.card-image-link {
 }
 .control-container {
   display: flex;
-  padding-bottom: 36px;
+  padding-bottom: 46px;
 }
 .control-container {
   position: relative;
@@ -815,15 +819,16 @@ a.card-image-link {
 
 .control-price-confines-from {
   top: 12px;
-  left: 120px;
+  left: 106px;
 }
 .control-price-confines-to {
   top: 12px;
-  left: 280px;
+  left: 246px;
 }
 .control {
   font-size: 18px;
   line-height: 23px;
+  display: flex;
 }
 
 .control-input {
@@ -832,12 +837,18 @@ a.card-image-link {
   line-height: 24px;
   font-weight: bold;
   background: #f2f2f2;
+  justify-content: center;
+  align-items: center;
 }
 .control-price {
-  width: 143px;
-  height: 48px;
+  width: 117px;
+  height: 42px;
   padding-left: 20px;
-  border: none;
+  outline: none;
+  border: 3px solid transparent;
+}
+.control-price:focus {
+  border: 3px solid rgba(131, 179, 211, 1);
 }
 .control-price-ot {
   font-size: 18px;
@@ -1043,7 +1054,6 @@ a.card-image-link {
 }
 
 .modal-container {
-
   position: fixed;
   top: 0;
   left: 0;
@@ -1055,14 +1065,15 @@ a.card-image-link {
   z-index: 2;
 }
 .modal {
-
   position: relative;
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
   border-radius: 30px;
 }
-
+/* .modal-container-close {
+  display: none;
+} */
 
 .modal-search {
   position: relative;
@@ -1228,7 +1239,7 @@ a.card-image-link {
   margin-right: 18px;
   font-weight: 700;
   padding: 12px 0;
-  width: 113px;
+  width: 120px;
 }
 .child {
   width: 49px;
@@ -1264,7 +1275,9 @@ a.card-image-link {
 
 .search-out {
   margin-right: 11px;
-  width: 119px;
+}
+.message:empty {
+  margin-bottom: 48px;
 }
 .seacrh-form .field-group {
   margin: 0;
