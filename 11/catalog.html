@@ -19,18 +19,16 @@
           />
         </a>
         <nav class="navigation">
-          <ul class="navigation-list">
+          <ul class="navigation-list navigation-menu">
             <li class="navigation-item">
-              <a href="#" class="navigation-link">Главная</a>
+              <a href="#" class="navigation-link page active">Главная</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link">О Седоне</a>
+              <a href="#" class="navigation-link page">О Седоне</a>
             </li>
 
             <li class="navigation-item">
-              <a href="catalog.html" class="navigation-link active"
-                >Гостиницы</a
-              >
+              <a href="catalog.html" class="navigation-link page">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
@@ -99,7 +97,38 @@
             <h2 class="inner-header__title">Гостиницы Седоны</h2>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html"> </a>
+                <a class="breadcrumbs-link" href="index.html">
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="breadcrumbs-item">
+                <svg
+                  width="8"
+                  height="11"
+                  viewBox="0 0 8 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.91526 4.96875L2.16526 0.71875C1.91526 0.46875 1.41526 0.46875 1.04026 0.71875C0.665263 0.96875 0.790263 1.46875 1.04026 1.71875L5.16526 5.46875L1.16526 9.21875C0.915263 9.46875 0.915263 9.96875 1.16526 10.2188C1.16526 10.3438 1.54026 10.4688 1.66526 10.4688C1.79026 10.4688 2.04026 10.3438 2.16526 10.2188L6.91526 5.96875C7.29026 5.71875 7.29026 5.21875 6.91526 4.96875Z"
+                    fill="white"
+                  />
+                </svg>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
@@ -153,7 +182,7 @@
               </fieldset>
 
               <fieldset data-test="filter" class="catalog-filter-group">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -192,22 +221,41 @@
 
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-
                 <div class="control control-container">
+                  <label
+                    class="control-price-confines control-price-confines-from"
+                    >от</label
+                  >
                   <input
                     class="control-input control-price control-price-left"
                     type="text"
-                    value="от 0"
+                    value="0"
                   />
-
+                  <label
+                    class="control-price-confines control-price-confines-to"
+                    >до</label
+                  >
                   <input
                     class="control-input control-price control-price-right"
                     type="text"
-                    value="до 9000"
+                    value="9000"
                   />
                 </div>
 
-                <input type="range" id="price" name="price" min="0" max="11" />
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 218px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden"
+                        >Изменить минимальную цену</span
+                      >
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden"
+                        >Изменить максимальную цену</span
+                      >
+                    </button>
+                  </div>
+                </div>
               </fieldset>
               <div class="btn-container">
                 <button class="button button-apply" type="submit">
